@@ -5,8 +5,13 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<style>
+			.box {
+				margin-right: 20%;
+			}
+			
 			.box1 {
 				background-color: blue;
+				margin-left: 50%;
 			}
 			
 			.box2 {
@@ -17,8 +22,13 @@
 
 	<body>
 		<div id="app">
-			<div v-bind:class="{'box1':checked}">
+			<div class="box" v-bind:class="{'box1':checked}">
 				测试{{message}}
+			</div>
+
+			<!--三目运算-->
+			<div class="box" v-bind:class="[checked?'box1':'box2']">
+				测试2{{message}}
 			</div>
 		</div>
 	</body>
@@ -28,7 +38,7 @@
 			el: '#app',
 			data: {
 				message: 'Hello Vue!',
-				checked: true,
+				checked: false,
 
 			}
 		})
