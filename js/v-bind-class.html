@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box1 {
+				background-color: blue;
+			}
+			
+			.box2 {
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<div v-bind:class="{'box1':checked}">
+				测试{{message}}
+			</div>
+		</div>
+	</body>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello Vue!',
+				checked: true,
+
+			}
+		})
+	</script>
+
+</html>
