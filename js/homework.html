@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		html,
+		body {
+			height: 100%
+		}
+		
+		.bg {
+			position: absolute;
+			width: 100%;
+			background-color:rgba(139,137,137,0);
+			top: 0;
+		}
+		
+		.pop {
+			position: fixed;
+			width: 80%;
+			height: 80%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: red;
+			display: none;
+		}
+	</style>
+
+	<body>
+		<div class="bg" id="bg">
+			<a href="javascript:void(0);" id="btn" onclick="pop()">弹出</a>
+			<div class="pop" id="app">
+			</div>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+			<h1>我是内容</h1>
+
+			<h1>我是内容</h1>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		function pop() {
+			var btn = document.getElementById("btn");
+			var pop = document.getElementById("app");
+			var bg = document.getElementById("bg");
+			if(btn.innerText == "弹出") {
+				pop.style.display = "block";
+				btn.innerText = "收起";
+				bg.style.backgroundColor="rgba(139,137,137,0.5)"
+			} else {
+				pop.style.display = "none";
+				btn.innerText = "弹出";
+				bg.style.backgroundColor="rgba(255,0,0,0)"
+			}
+
+		}
+	</script>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.title {
+				height: 40px;
+				color: white;
+				background-color: black;
+			}
+			
+			.left {
+				padding-left: 20px;
+				float: left;
+				line-height: 40px;
+				text-align: center;
+			}
+			
+			.right {
+				padding-right: 20px;
+				float: right;
+				line-height: 40px;
+				text-align: center;
+			}
+			
+			.center {
+				position: relative;
+				background-color: yellowgreen;
+				text-align: center;
+			}
+			
+			span{
+				background-color: lightblue;
+			}
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="title">
+			<div class="left">
+				StackOverFlow
+			</div>
+			<div class="right">
+				Login
+			</div>
+		</div>
+
+		<div class="center">
+			<span>好怕ssss</span>
+			<span>呵adadad呵</span>
+			<span>狗afghfh</span>
+			<span>CNsdfN</span>
+			<span>CsfafafafsafafaN</span>
+		</div>
+
+		<ul id="ul">
+			<li>wobushifaol;jsf實際付款了時間考慮分公司</li>
+			<li>wobushifaol;jsf實際付款了時間考慮分公司</li>
+			<li>wobushifaol;jsf實際付款了時間考慮分公司</li>
+			<li>wobushifaol;jsf實際付款了時間考慮分公司</li>
+			<li>wobushifaol;jsf實際付款了時間考慮分公司</li>
+			<li>wobushifaol;jsf實際付款了時間考慮分公司</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		window.onresize = function(s) {
+			var width = document.body.clientWidth;
+			var ul = document.getElementById("ul");
+
+			if(width < 480) {
+				ul.style.backgroundColor = "gold";
+			} else if(width > 480 && width < 560) {
+				ul.style.backgroundColor = "red";
+			} else if(width > 560 && width < 680) {
+				ul.style.backgroundColor = "red";
+			} else ul.style.backgroundColor = "white";
+		}
+	</script>
+
+</html>
